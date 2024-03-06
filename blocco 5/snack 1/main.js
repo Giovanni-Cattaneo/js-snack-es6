@@ -14,8 +14,9 @@ console.log(zucchines);
 
 let sum = 0;
 
-zucchines.forEach(zucchina => {
+zucchines.forEach(function(zucchina) {
     sum += zucchina.peso
+    return sum
 }) 
 
 console.log(sum);
