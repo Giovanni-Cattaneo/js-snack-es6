@@ -27,7 +27,7 @@ teams.forEach(function (team){
 })
 
 const newTeams= teams.map(function({falliSubiti, ...rest}){// questa funzione ci permette di escludere la variabile e prendere il rest facendo return solo delle altre proprietà dell'array 
-    return rest
+    return rest// rest include tutte le proprietà tranne quelle esplicitate singole come i fali facendo return solo del rest escludiamo ogni altra proprietà specificata
 })
 
 console.log(newTeams);
